@@ -1,0 +1,16 @@
+/* Layout */
+.sidebar { position: fixed; width: 500px; top: 0; bottom: 0; overflow-y: auto; }
+.iterations { position: absolute; left: 500px; }
+
+/* Cells */
+.initial { margin: 0; line-height: 0; border: 1px solid #CCC; display: inline-block; }
+.cell { background: white; -webkit-appearance: none; margin: 0!important; width: 10px; height: 10px; display: inline-block; }
+.cell.on { background: black; }
+.initial .cell:hover { cursor: pointer; background: lightgray; }
+.initial .cell.on:hover { cursor: pointer; background: #444; }
+
+.iteration-count { font-weight: bold; }
+
+.height-34px { height: 34px; line-height: 34px; }
+
+.fork-me { position: fixed; top: 0; right: 0; border: 0; }

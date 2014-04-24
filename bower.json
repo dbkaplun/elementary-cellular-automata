@@ -1,0 +1,30 @@
+{
+  "name": "elementary-cellular-automata",
+  "version": "0.0.0",
+  "homepage": "https://github.com/beardtree/elementary-cellular-automata",
+  "authors": [
+    "Dan Kaplun <dan@beardtree.com>"
+  ],
+  "description": "http://beardtree.github.io/elementary-cellular-automata",
+  "main": "index.html",
+  "private": true,
+  "keywords": [
+    "elementary",
+    "cellular",
+    "automata",
+    "rule",
+    "110"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rivets": "^0.6.7",
+    "html5slider": "fryn/html5slider#gh-pages"
+  }
+}

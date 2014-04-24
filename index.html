@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Elementary cellular automata</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="keywords" content="elementary,cellular,automata,rule,110,applet,script" />
+  </head>
+  <body id="automaton">
+    <div class="sidebar container">
+      <h1>Elementary cellular automata</h1>
+      <blockquote>
+        <p>In mathematics and computability theory, an elementary cellular automaton is a one-dimensional cellular automaton where there are two possible states (labeled 0 and 1) and the rule to determine the state of a cell in the next generation depends only on the current state of the cell and its two immediate neighbors. As such it is one of the simplest possible models of computation. Nevertheless, there is an elementary cellular automaton (rule 110, defined below) which is capable of universal computation.</p>
+        <footer>Wikipedia article on <cite title="Wikipedia"><a href="http://en.wikipedia.org/wiki/Elementary_cellular_automaton">elementary cellular automata</a></cite></footer>
+      </blockquote>
+
+      <form class="form-horizontal" rv-on-submit="controller.preventDefault" role="form">
+        <div class="form-group">
+          <label for="rule" class="col-sm-4 control-label">Rule</label>
+          <div class="col-sm-8">
+            <input type="number" rv-value="state.rule" rv-on-change="controller.clear" min="0" max="255" name="rule" class="form-control" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label">Initial state</label>
+          <div class="col-sm-8 height-34px">
+            <span class="initial">
+              <input type="checkbox" rv-each-cell="state.initial" rv-checked="cell" rv-class-on="cell" rv-on-change="controller.initialChanged" class="cell" />
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="size" class="col-sm-4 control-label">Size</label>
+          <div class="col-sm-8">
+            <input type="number" rv-value="state.size" rv-on-change="controller.clear" name="size" class="form-control" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="speed" class="col-sm-4 control-label">Speed</label>
+          <div class="col-sm-8">
+            <input type="range" rv-value="state.speed" min="1" max="100" name="speed" class="height-34px" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-4 col-sm-8">
+            <button rv-on-click="controller.next" type="button" class="btn btn-default"><span class="glyphicon glyphicon-step-forward"></span></button>
+            <button rv-on-click="controller.playPause" rv-class-active="state.playing" type="button" class="btn btn-success"><span class="glyphicon glyphicon-play"></span></button>
+            <button rv-on-click="controller.stop" type="button" class="btn btn-default"><span class="glyphicon glyphicon-stop"></span></button>
+            <span class="text-muted">Iteration count: <span rv-text="state.iterationCount" class="iteration-count"></span></span>
+          </div>
+        </div>
+      </form>
+    </div>
+    <canvas id="iterations" class="iterations"></canvas>
+
+    <a href="https://github.com/beardtree/elementary-cellular-automata"><img class="fork-me" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" /></a>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bower_components/rivets/dist/rivets.min.js"></script>
+    <script src="bower_components/html5slider/html5slider.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
