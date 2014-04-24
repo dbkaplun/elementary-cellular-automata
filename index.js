@@ -1,5 +1,6 @@
 var state = {
   rule: 110,
+  coolRules: [110, 102, 126, 50, 137, 75, 135, 169, 254],
   size: 10,
   speed: 50,
   playing: false,
@@ -45,6 +46,10 @@ jQuery(function ($) {
         state.lastIteration = null;
 
         canvas.width = 0; canvas.height = 0;
+      },
+      setRule: function () {
+        state.rule = $(this).text();
+        automatonView.models.controller.clear();
       },
       initialChanged: function () {
         var $cell = $(this);
