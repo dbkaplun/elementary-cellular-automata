@@ -1,11 +1,11 @@
 {
   "name": "elementary-cellular-automata",
   "version": "0.0.0",
-  "homepage": "https://github.com/beardtree/elementary-cellular-automata",
+  "homepage": "https://github.com/secrettriangle/elementary-cellular-automata",
   "authors": [
-    "Dan Kaplun <dan@beardtree.com>"
+    "Dan Kaplun <dan@secrettriangle.net>"
   ],
-  "description": "http://beardtree.github.io/elementary-cellular-automata",
+  "description": "http://secrettriangle.github.io/elementary-cellular-automata",
   "main": "index.html",
   "private": true,
   "keywords": [

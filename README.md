@@ -1,4 +1,4 @@
-elementary-cellular-automata
-============================
+[elementary-cellular-automata](http://secrettriangle.github.io/elementary-cellular-automata)
+==============================
 
-http://beardtree.github.io/elementary-cellular-automata
+Elementary cellular automata
