@@ -1,11 +1,11 @@
 {
   "name": "elementary-cellular-automata",
   "version": "0.0.0",
-  "homepage": "https://github.com/secrettriangle/elementary-cellular-automata",
+  "homepage": "https://github.com/dbkaplun/elementary-cellular-automata",
   "authors": [
-    "Dan Kaplun <dan@secrettriangle.net>"
+    "Dan Kaplun <dbkaplun@gmail.com>"
   ],
-  "description": "http://secrettriangle.github.io/elementary-cellular-automata",
+  "description": "http://dbkaplun.github.io/elementary-cellular-automata",
   "main": "index.html",
   "private": true,
   "keywords": [

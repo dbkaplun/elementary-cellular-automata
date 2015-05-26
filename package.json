@@ -1,7 +1,7 @@
 {
   "name": "elementary-cellular-automata",
   "version": "0.0.0",
-  "description": "http://secrettriangle.github.io/elementary-cellular-automata",
+  "description": "http://dbkaplun.github.io/elementary-cellular-automata",
   "main": "index.html",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/secrettriangle/elementary-cellular-automata.git"
+    "url": "git://github.com/dbkaplun/elementary-cellular-automata.git"
   },
   "keywords": [
     "elementary",
@@ -19,10 +19,10 @@
     "rule",
     "110"
   ],
-  "author": "Dan Kaplun <dan@secrettriangle.net>",
+  "author": "Dan Kaplun <dbkaplun@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/secrettriangle/elementary-cellular-automata/issues"
+    "url": "https://github.com/dbkaplun/elementary-cellular-automata/issues"
   },
-  "homepage": "https://github.com/secrettriangle/elementary-cellular-automata"
+  "homepage": "https://github.com/dbkaplun/elementary-cellular-automata"
 }
